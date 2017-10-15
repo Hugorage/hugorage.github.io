@@ -67,7 +67,11 @@ input:focus{
 
 .search{
 	display:flex;
-	margin-right: 355px;
+	margin-right: 335px;
+}
+
+.search_button{
+	color: #a4a4a4;;
 }
 
 .browse{
@@ -83,6 +87,10 @@ font-size: 14px;
 font-weight: 300;
 line-height: 32px;
 letter-spacing: 0.35px;
+}
+
+.fa-caret-down {
+	color: #838383;
 }
 
 .dropdown {
@@ -101,21 +109,26 @@ background-color: #ffffff;
 border: 1px solid #e9e9e9;
     z-index: 1;
     overflow: auto;
+    padding: 10px 20px 0;
 }
 
 .dropdown ul{
 	list-style-type: none;
+	margin: 10px 0;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+.dropdown-content li a {
     text-decoration: none;
     display: block;
+    color: #4f4f4f;
+font-family: sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0.35px;
 }
 
 .dropdown-content h3{
-	    margin: 10px 0 10px 14px;
     color: #232323;
     font-family: sans-serif;
     font-size: 14px;
@@ -173,6 +186,107 @@ input:focus{
 	background-color: #f16d7f;
 }
 
+.cart {
+margin-top: 15px
+}
+
+.cart h2{
+	color: #222222;
+font-family: sans-serif;
+font-size: 12px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.cart_product{
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #e8e8e8; 
+	margin: 10px 0;
+	padding-bottom: 15px;
+}
+
+.cart_product_name{
+	display: flex;
+	flex-direction: column;
+	margin-right: 50px;
+
+}
+
+
+.cancel_button {
+	align-self: center;
+	color: #c0c0c0;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.fa-star, .fa-star-half-o{
+color: #e4af48;
+font-size: 12px;
+font-weight: 400;
+text-transform: uppercase;
+}
+.rating{
+margin: 10px 0;
+}
+
+.price{
+	color: #f16d7f;
+font-family: sans-serif;
+font-size: 12px;
+font-weight: 400;
+text-transform: uppercase;
+font-size: 10px;
+}
+
+.total_price{
+	margin: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	color: #222222;
+font-family: sans-serif;
+font-size: 16px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.cart_button{
+	border: 1px solid #eaeaea;
+	margin: 25px 0;
+}
+
+.cart_button:last-child{
+	margin-top: 0;
+}
+
+
+.cart_button a{
+	text-decoration: none;
+
+display: block;
+color: #4a4a4a;
+font-family: Lato;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+text-align: center;
+padding: 18px;
+box-sizing: border-box;
+width: 100%;
+}
+
+.checkout{
+	border: 1px solid #f16d7f;
+}
+
+
+.checkout a{
+	color: #f16d7f;
+}
+
+
 nav {
 	height: 54px;
 	display:flex;
@@ -186,19 +300,13 @@ nav {
 	position: relative;
 }
 
-.menu li{
-	
-	line-height: 54px;
-	
-	
-}
 
 .menu a{
 	color: #222222;
 	font-family: sans-serif;
 	font-size: 14px;
 	font-weight: 700;
-	line-height: 26px;
+	line-height: 54px;
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 17px 20px;
@@ -216,6 +324,7 @@ nav {
     border-radius: 5px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
 border: 1px solid #e9e9e9;
+padding-top: 10px;
 }
 
 .menu > li:hover > div {
@@ -226,8 +335,7 @@ border: 1px solid #e9e9e9;
 .nav-column{
 	width: calc(100% / 3);
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: column;	
 	flex-wrap: nowrap;
 	margin: 0 20px;
 	
@@ -235,12 +343,11 @@ border: 1px solid #e9e9e9;
 
 
 .nav-column h3{
-	margin: 10px 0;
 	color: #232323;
 font-family: sans-serif;
 font-size: 14px;
 font-weight: 400;
-line-height: 32px;
+line-height: 35px;
 text-transform: uppercase;
 letter-spacing: 0.35px;
 border-bottom: 1px solid #e8e8e8;
@@ -250,7 +357,8 @@ border-bottom: 1px solid #e8e8e8;
 .nav-column ul{
 	display: block;
 	list-style-type: none;
-	margin-bottom: 15px;
+	margin: 10px 0;
+
 
 }
 
@@ -270,6 +378,29 @@ text-transform: none;
 display: block;
 padding: 0;
 line-height: 28px;
+}
+
+.promo{
+	display: flex;
+	height: 121px;
+	background: url(../img/layer-42.jpg) center no-repeat;
+box-sizing: border-box;
+	
+
+}
+
+.promo a{
+	text-decoration: none;
+	color: #ffffff;
+	font-family: sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 28px;
+	text-transform: uppercase;
+	letter-spacing: 0.55px;
+	padding:0;
+	display: block;
+	padding: 60px 0 0 150px;
 
 }
 
@@ -277,13 +408,15 @@ line-height: 28px;
 	border-bottom: 3px solid #ef5b70;
 }
 
+.bg_slider{
+	background-color: #e8e8e8;
+}
+
 .slider{
-width: 100%;
 height: 668px;
 margin-bottom: 97px;
 	background-color: #e8e8e8;
-	background: url(../img/layer-24.png) no-repeat;
-	background-position: -230px -50px ;
+	background: url(../img/layer-24.png) top no-repeat;
 	box-sizing: border-box;
 	overflow: auto;
 
@@ -296,7 +429,7 @@ font-size: 40px;
 font-weight: 400;
 text-transform: uppercase;
 letter-spacing: 1px;
-margin: 223px 0;
+margin: 250px 0;
 padding-left: 11px;
 border-left: 12px solid #ef5b70;
 }
@@ -421,20 +554,20 @@ margin-bottom: 60px;
 
 .product  {
 	display: block;
-	height: 100%;
 	text-decoration: none;
 	color: #222222;
 	font-family: sans-serif;
 	font-size: 13px;
 	font-weight: 400;
 	text-transform: uppercase;
+	padding: 0 15px;
 		
 }
 .product_photo{
 	position: relative;
 }
 
-.product_photo img{
+.photo{
 	display: block;
 	margin: 0 auto;
 	width: 100%
@@ -475,16 +608,14 @@ display: flex;
 	font-weight: 700;
 }
 
+.add_cart img{
+	position: relative;
+	top: 7px;
+}
+
 .add_cart:hover{
 	background: black;
 }
-
-
-
-
-
-
-
 
 
 .item_name{
@@ -493,7 +624,7 @@ display: flex;
 	font-size: 13px;
 	font-weight: 400;
 	text-transform: uppercase;
-	margin: 17px 15px;
+	margin: 17px 0;
 }
 
 .item_price{
@@ -502,9 +633,29 @@ display: flex;
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
-	margin-left: 15px;
+	
 }
 
+.rating_item{
+	float:right;
+	display: none;
+}
+
+.item:hover .rating_item{
+	display: block;
+}
+
+
+/*.rating_item .fa-star, .fa-star-half-o{
+	opacity: 0.4;
+	color: lightgrey;
+}
+
+.rating_item .fa-star:hover, .fa-star-half-o:hover{
+	opacity:	1;
+	color: #e4af48;
+}
+*/
 .more_product {
 	width: 215px;
 	height: 51px;
@@ -781,6 +932,7 @@ margin-bottom: 33px;
 	height: 35px;
 	margin-right: 8px;
 	background-color: #ffffff;
+	box-sizing: border-box;
 
 	
 }
@@ -791,17 +943,16 @@ margin-bottom: 33px;
 
 .icon a{
 	display: block;	
-	width: 100%;
+	height: 100%;
 	text-decoration: none;
 	color: #b2b2b2;
+	text-align: center;
 
 }
 
-.tw_icon{
-	width: 35px;
-	height: 35px;
+.tw_icon a{
 	background-color: #f16d7f;
-	color: white;
+	color: #f7f7f8;
 }
 
 .in_icon{

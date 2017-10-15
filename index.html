@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="styles/style.css">
+	<script src="https://use.fontawesome.com/cf5d86799b.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -11,7 +12,7 @@
 			<a class="logo" href="#"><img src="img/group-2.png" alt="logo">BRAN<span>D</span></a>
 			<div class="search">
 				<div class="dropdown">
-					<button class="browse">Browse 	<span>&#9660;</span></button>
+					<button class="browse">Browse <i class="fa fa-caret-down" aria-hidden="true"></i></button>
 					<div class="dropdown-content">
 					    <h3>Women</h3>
 						<ul>
@@ -25,21 +26,70 @@
 							<li><a href="#">Skirts</a></li>
 							<li><a href="#">Accessories</a></li>
 						</ul>
+						<h3>Men</h3>
+						<ul>
+							<li><a href="#">Tees/Tank tops</a></li>
+							<li><a href="#">Shirts/Polos</a></li>
+							<li><a href="#">Sweaters</a></li>
+							<li><a href="#">Sweatshirts/Hoodies/Coats</a></li>
+							<li><a href="#">Blazers</a></li>
+							<li><a href="#">Jackets/vests</a></li>
+						</ul>
 					 </div>
 				</div>
 					<input type = "search" class="search_input" autocomplete="off" type="text" value="" maxlength="128" placeholder="Search for Item...">
-					<button class="search_button"></button>
-
+					<button class="search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
+			</div>
+			<div class="dropdown">
+				<div class="cart">
+					<img src="img/cart.png">
+					<div class="dropdown-content">
+						<div class="cart_product">
+							<img src="img/layer-43.jpg">
+							<div class="cart_product_name">
+							<h2>Rebox Zane</h2>
+							<p class="rating"><i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+							<p class="price">1  x   $250</p>
+							</div>
+							<a href="#" class="cancel_button"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+						</div>
+						<div class="cart_product">
+							<img src="img/layer-44.jpg">
+							<div class="cart_product_name">
+							<h2>Rebox Zane</h2>
+							<p class="rating"><i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+							<p class="price">1  x   $250</p>
+							</div>
+							<a href="#" class="cancel_button"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+						</div>
+						<div class="total_price">
+							<p>total</p>
+							<p>$500.00</p>
+						</div>
+						<div class="cart_button checkout">
+							<a href="#">checkout</a>
+						</div>
+						<div class="cart_button">
+							<a href="#">Go to cart</a>
+						</div>
+					</div>
+				</div>
 			</div>
 			<button class="my_acc">My Account</button>
 		</div>
 	</div>
-	<div class="container">
 	<nav>
 		<ul class="menu">
 			<li>
 				<a class="active_link" href="#">Home</a>
-				
 			</li>
 			<li><a href="#">Man</a>
 				<div>
@@ -64,11 +114,12 @@
 							<li><a href="#">Tops</a></li>
 							<li><a href="#">Sweaters/Knits</a></li>
 							<li><a href="#">Jackets/Coats</a></li>
-							<li><a href="#">Blazers</a></li>
-							<li><a href="#">Denim</a></li>
-							<li><a href="#">Leggins/Pants</a></li>
-							<li><a href="#">Skirts</a></li>
-							<li><a href="#">Accessories</a></li>
+						</ul>
+						<h3>Man</h3>
+						<ul>
+							<li><a href="#">Dresses</a></li>
+							<li><a href="#">Tops</a></li>
+							<li><a href="#">Sweaters/Knits</a></li>
 						</ul>
 					</div>
 					<div class="nav-column">
@@ -78,12 +129,12 @@
 							<li><a href="#">Tops</a></li>
 							<li><a href="#">Sweaters/Knits</a></li>
 							<li><a href="#">Jackets/Coats</a></li>
-							<li><a href="#">Blazers</a></li>
-							<li><a href="#">Denim</a></li>
-							<li><a href="#">Leggins/Pants</a></li>
-							<li><a href="#">Skirts</a></li>
-							<li><a href="#">Accessories</a></li>
 						</ul>
+						<div class="promo">
+							<a href="#">Super  <br>sale!</a>
+						</div>
+					</div>	 
+
 					</div>
 				</div>
 			</li>
@@ -319,13 +370,17 @@
 			</li>
 		</ul>
 	</nav>
+	<div class="bg_slider">
+	<div class="container">
 	<div class="slider">
 			<div class="slider_text">
 				<h2>THE BRAND</h2>
 				OF LUXERIOUS<span> FASHION </span>
 			</div>
+		</div>
 	</div>
-	<div class="main">
+	</div>
+	<div class="main container">
 
 			<div class="categories">
 				<div class="men_category category_item">
@@ -362,125 +417,173 @@
 			<h3>Shop for items based on what we featured in this week</h3>
 			<div class="catalog">
 				<div class="item">
-					<div class="product_photo"><img src="img/layer-2.png" alt="">
+					<div class="product_photo"><img class="photo" src="img/layer-2.png" alt="">
 						<div class="buy_now">
-							<a class="add_cart" href="#">Add to Cart</a>
+							<a class="add_cart" href="#"><img src="img/cart2.png"> Add to Cart</a>
 						</div>
 					</div>
 					<a class="product" href="#">
 					<div class="item_name">
-						Mango  People  T-shirt
+						<p>Mango  People  T-shirt</p>
 					</div>
-					<div class="item_price">
+					<span class="item_price">
 						$52.00
-					</div>
+					</span>
+					<span class="rating_item"><i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					</span>
 					</a>
 				</div>
 
 				<div class="item">	
-					<div class="product_photo"><img src="img/layer-3.png" alt="">
+					<div class="product_photo"><img class="photo" src="img/layer-3.png" alt="">
 						<div class="buy_now">
-							<a class="add_cart" href="#">Add to Cart</a>
+							<a class="add_cart" href="#"><img src="img/cart2.png"> Add to Cart</a>
 						</div>
 					</div>
 					<a class="product" href="#">
 					<div class="item_name">
 						Mango  People  T-shirt
 					</div>
-					<div class="item_price">
+					<span class="item_price">
 						$52.00
-					</div>
+					</span>
+					<span class="rating_item"><i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					</span>
 					</a>
 				</div>
-				<div class="item">	<div class="product_photo"><img src="img/layer-4.png" alt="">
+				<div class="item">	<div class="product_photo"><img class="photo" src="img/layer-4.png" alt="">
 					<div class="buy_now">
-						<a class="add_cart" href="#">Add to Cart</a>
+						<a class="add_cart" href="#"><img src="img/cart2.png"> Add to Cart</a>
 					</div>
 					</div>
 					<a class="product" href="#">
 					<div class="item_name">
 						Mango  People  T-shirt
 					</div>
-					<div class="item_price">
+					<span class="item_price">
 						$52.00
-					</div>
+					</span>
+					<span class="rating_item"><i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					</span>
 					</a>
 				</div>
-				<div class="item">	<div class="product_photo"><img src="img/layer-5.png" alt="">
+				<div class="item">	<div class="product_photo"><img class="photo" src="img/layer-5.png" alt="">
 					<div class="buy_now">
-						<a class="add_cart" href="#">Add to Cart</a>
+						<a class="add_cart" href="#"><img src="img/cart2.png"> Add to Cart</a>
 					</div>
 					</div>
 					<a class="product" href="#">
 					<div class="item_name">
 						Mango  People  T-shirt
 					</div>
-					<div class="item_price">
+					<span class="item_price">
 						$52.00
-					</div>
+					</span>
+					<span class="rating_item"><i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					</span>
 					</a>
 				</div>
-				<div class="item">	<div class="product_photo"><img src="img/layer-6.png" alt="">
+				<div class="item">	<div class="product_photo"><img class="photo" src="img/layer-6.png" alt="">
 					<div class="buy_now">
-						<a class="add_cart" href="#">Add to Cart</a>
+						<a class="add_cart" href="#"><img src="img/cart2.png"> Add to Cart</a>
 					</div>
 					</div>
 					<a class="product" href="#">
 					<div class="item_name">
 						Mango  People  T-shirt
 					</div>
-					<div class="item_price">
+					<span class="item_price">
 						$52.00
-					</div>
+					</span>
+					<span class="rating_item"><i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					</span>
 					</a>
 				</div>
-				<div class="item">	<div class="product_photo"><img src="img/layer-7.png" alt="">
+				<div class="item">	<div class="product_photo"><img class="photo" src="img/layer-7.png" alt="">
 					<div class="buy_now">
-						<a class="add_cart" href="#">Add to Cart</a>
+						<a class="add_cart" href="#"><img src="img/cart2.png"> Add to Cart</a>
 					</div>
 					</div>
 					<a class="product" href="#">
 					<div class="item_name">
 						Mango  People  T-shirt
 					</div>
-					<div class="item_price">
+					<span class="item_price">
 						$52.00
-					</div>
+					</span>
+					<span class="rating_item"><i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					</span>
 					</a>
 				</div>
 				<div class="item">
-					<div class="product_photo"><img src="img/layer-8.png" alt="">
+					<div class="product_photo"><img class="photo" src="img/layer-8.png" alt="">
 					<div class="buy_now">
-						<a class="add_cart" href="#">Add to Cart</a>
+						<a class="add_cart" href="#"><img src="img/cart2.png"> Add to Cart</a>
 					</div>
 					</div>
 					<a class="product" href="#">
 					<div class="item_name">
 						Mango  People  T-shirt
 					</div>
-					<div class="item_price">
+					<span class="item_price">
 						$52.00
-					</div>
+					</span>
+					<span class="rating_item"><i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					</span>
 					</a>
 				</div>
 				<div class="item">
-					<div class="product_photo"><img src="img/layer-9.png" alt="">
+					<div class="product_photo"><img class="photo" src="img/layer-9.png" alt="">
 					<div class="buy_now">
-						<a class="add_cart" href="#">Add to Cart</a>
+						<a class="add_cart" href="#"><img src="img/cart2.png"> Add to Cart</a>
 					</div>
 					</div>
 					<a class="product" href="#">
 					<div class="item_name">
 						Mango  People  T-shirt
 					</div>
-					<div class="item_price">
+					<span class="item_price">
 						$52.00
-					</div>
+					</span>
+					<span class="rating_item"><i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+					</span>
 					</a>
 				</div>
 				
 			</div>
-			<button class="more_product">Browse All Product</button>
+			<button class="more_product">Browse All Product  <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
 			<div class="deal">
 				<div class="deal_title"><h2>30%</h2><span> OFFER</span> <br>FOR WOMEN
 				</div>
@@ -569,11 +672,11 @@
 			<div class="container flex">
 				© 2017  Brand  All Rights Reserved.
 				<div class="social">	
-					<div class="icon"><a href="#"></a></div>
-					<div class="icon tw_icon"><a href="#"></a></div>
-					<div class="icon in_icon"><a href="#"></a></div>
-					<div class="icon"><a href="#"></a></div>
-					<div class="icon"><a href="#"></a></div>
+					<div class="icon"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+					<div class="icon tw_icon"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+					<div class="icon in_icon"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></div>
+					<div class="icon"><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></div>
+					<div class="icon"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></div>
 				</div>
 			</div>
 		</div>
