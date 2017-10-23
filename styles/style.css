@@ -646,7 +646,7 @@ margin-bottom: 60px;
 	top: 10px;
 }
 
-.add_cart:hover{
+.add_cart:hover, .item_button:hover{
 	background: black;
 }
 
@@ -980,17 +980,14 @@ margin-bottom: 33px;
 	text-decoration: none;
 	color: #b2b2b2;
 	text-align: center;
-
 }
 
-.tw_icon a{
+.icon a:hover{
 	background-color: #f16d7f;
 	color: #f7f7f8;
 }
 
-.in_icon{
-	opacity: 0.3;
-}
+
 
 .catalog_head{
 	display: flex;
@@ -1136,4 +1133,95 @@ margin: 10px 0;
 	display: flex;
 	height: 53px;
 	background-color: #f3f3f3;
+	align-items: center;
+	margin-bottom: 45px;
+}
+
+
+.sort_title{
+	width: 65px;
+	height: 33px;
+	text-align: center;
+	background-color: white;
+	margin-left: 10px;
+}
+
+.sort_title p {
+	line-height: 31px;
+}
+
+
+.sort select{
+
+	width: 85px;
+	height: 33px;
+	padding: 0 10px; 
+	border: none;
+	border-left: 1px solid #ef5b70;
+
+}
+
+
+
+select:focus{
+	outline: none;
+}
+
+.page_nav{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+
+}
+
+.item-list{
+	width: 264px;
+height: 47px;
+border-radius: 3px;
+border: 1px solid #ebebeb;
+background-color: #ffffff;
+padding: 15px;
+box-sizing: border-box;
+}
+
+.pager{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.pager li{
+	list-style-type: none;
+}
+
+.pager a {
+	color: #c4c4c4;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 26px;
+	text-decoration: none;
+}
+
+.pager-current a{
+	color: #ef5b70;
+}
+
+.view_button{
+		width: 153px;
+	height: 47px;
+	border-radius: 3px;
+	border: 1px solid #ef5b70;
+    display: block;
+    text-decoration: none;
+    color: #ef5b70;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 26px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+ 
 }
