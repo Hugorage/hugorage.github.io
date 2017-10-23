@@ -1364,6 +1364,12 @@ box-sizing: border-box;
 line-height: 57px;
 }
 
+.product_cart_button img{
+	position: relative;
+    top: 7px;
+    margin: 0 10px;
+ }
+
 .recomended_title{
 	color: #4d4d4d;
 font-family: sans-serif;
